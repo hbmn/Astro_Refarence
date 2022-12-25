@@ -14,7 +14,7 @@
 ・script タグに書いたスクリプトは、ブラウザ上で実行される script タグとして出力される。<br>
 
 vue のような書き方、これは NG<br>
-<button onClick={handleClick}>Nothing will happen when you click me!</button>
+`<button onClick={handleClick}>Nothing will happen when you click me!</button>`
 
 ・md ファイルも使用可能。blog ページの blog 記事 post は md ファイルで記述<br>
 ・about ページは条件分岐で表示をコントロール<br>
