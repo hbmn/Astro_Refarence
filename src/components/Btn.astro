@@ -1,0 +1,24 @@
+---
+const { url } = Astro.props;
+---
+
+<button class="btn"
+  ><a href={url} target="_blank"><slot>デフォ</slot></a>
+</button>
+
+<style>
+  button {
+    background-color: darkblue;
+    padding: 5px;
+
+    border: none;
+    border-radius: 3px;
+  }
+  button:hover {
+    opacity: 0.7;
+  }
+  button a {
+    color: #fff;
+    text-decoration: none;
+  }
+</style>

@@ -1,51 +1,21 @@
-# Welcome to [Astro](https://astro.build)
+##Astro_Refarence
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/s/github/withastro/astro/tree/latest/examples/basics)
+静的テンプレート Astro の練習を兼ねて、公式リファレンスのブログサイトを作成。<br>
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+※パッケージマネージャーは yarn、node_module は除いてあるので<em>yarn</em>を実行、<br>
+<em>yarn dev</em>でローカルサーバーの立ち上げ。
 
-![basics](https://user-images.githubusercontent.com/4677417/186188965-73453154-fdec-4d6b-9c34-cb35c248ae5b.png)
+---
 
+・ページコンポーネントはディレクトリ pages の中にファイル xxx.astro を作成。<br>
+・コンポーネントは components フォルダにまとめる<br>
+・ビルドしない画像などは public フォルダへ<br>
 
-## 🚀 Project Structure
+・script タグに書いたスクリプトは、ブラウザ上で実行される script タグとして出力される。<br>
 
-Inside of your Astro project, you'll see the following folders and files:
+vue のような書き方、これは NG<br>
+<button onClick={handleClick}>Nothing will happen when you click me!</button>
 
-```
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
-
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                | Action                                             |
-| :--------------------- | :------------------------------------------------- |
-| `npm install`          | Installs dependencies                              |
-| `npm run dev`          | Starts local dev server at `localhost:3000`        |
-| `npm run build`        | Build your production site to `./dist/`            |
-| `npm run preview`      | Preview your build locally, before deploying       |
-| `npm run astro ...`    | Run CLI commands like `astro add`, `astro preview` |
-| `npm run astro --help` | Get help using the Astro CLI                       |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
-# Astro_Refarence
+・md ファイルも使用可能。blog ページの blog 記事 post は md ファイルで記述<br>
+・about ページは条件分岐で表示をコントロール<br>
+・blog ページで Card コンポーネントを props で内容をそれぞれ変更
